@@ -1,5 +1,6 @@
 package com.mindmac.applog.service;
 
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
@@ -156,11 +157,11 @@ public class LogLauncher implements IXposedHookLoadPackage, IXposedHookZygoteIni
 			}
 	}
 	
-	private static void after(MethodHookParam param){
+	private static void after(MethodHookParam param) throws IOException {
 		logMethod(param);
 	}
 	
-	private static void logMethod(MethodHookParam param){
+	private static void logMethod(MethodHookParam param) throws IOException{
 		boolean isOutputJson = false;
 		String settingValue = LogManager.getSetting(Util.JSON_OUTPUT_SETTING);
 		if(settingValue != null && settingValue.equals("true")){

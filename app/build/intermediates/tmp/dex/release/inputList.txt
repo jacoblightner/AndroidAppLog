@@ -1,4 +1,3 @@
 C:\Users\jlightner\AndroidStudioProjects\AndroidAppLog2\app\build\intermediates\classes\release
-C:\Users\jlightner\AndroidStudioProjects\AndroidAppLog2\app\build\intermediates\pre-dexed\release\XposedBridgeApi-54-8f04c814fdbc8c2cc7556ad70f672235edda7488.jar
 C:\Users\jlightner\AndroidStudioProjects\AndroidAppLog2\app\build\intermediates\pre-dexed\release\support-v4-19.1.0-709de0608fddffee6dc749e176d8981e4b3c6665.jar
 C:\Users\jlightner\AndroidStudioProjects\AndroidAppLog2\app\build\intermediates\pre-dexed\release\dexlib2-2932a1e6dba49b0b22b3445722b919e0585f68bd.jar

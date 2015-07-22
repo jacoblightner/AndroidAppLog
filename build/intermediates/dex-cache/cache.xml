@@ -9,18 +9,18 @@
         <dex dex="C:\Users\jlightner\AndroidStudioProjects\AndroidAppLog2\app\build\intermediates\pre-dexed\release\dexlib2-2932a1e6dba49b0b22b3445722b919e0585f68bd.jar" />
     </item>
     <item
-        jar="C:\Users\jlightner\AndroidStudioProjects\AndroidAppLog2\app\libs\XposedBridgeApi-54.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="5f16da4d2ecb2c95be2556550e4a63461f43a99b">
-        <dex dex="C:\Users\jlightner\AndroidStudioProjects\AndroidAppLog2\app\build\intermediates\pre-dexed\release\XposedBridgeApi-54-8f04c814fdbc8c2cc7556ad70f672235edda7488.jar" />
-    </item>
-    <item
         jar="C:\Users\jlightner\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
         <dex dex="C:\Users\jlightner\AndroidStudioProjects\AndroidAppLog2\app\build\intermediates\pre-dexed\release\support-v4-19.1.0-709de0608fddffee6dc749e176d8981e4b3c6665.jar" />
+    </item>
+    <item
+        jar="C:\Users\jlightner\AndroidStudioProjects\AndroidAppLog2\app\libs\XposedBridgeApi-54.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5f16da4d2ecb2c95be2556550e4a63461f43a99b">
+        <dex dex="C:\Users\jlightner\AndroidStudioProjects\AndroidAppLog2\app\build\intermediates\pre-dexed\release\XposedBridgeApi-54-8f04c814fdbc8c2cc7556ad70f672235edda7488.jar" />
     </item>
 
 </items>

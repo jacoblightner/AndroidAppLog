@@ -1,20 +1,32 @@
 package com.mindmac.applog.service;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import android.text.TextUtils;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+
 public class Parser {
-	public static String parseParameters(String[] argTypeNames, Object[] argObjects, boolean isOutputJson){
+	public static String parseParameters(String[] argTypeNames, Object[] argObjects, boolean isOutputJson) throws IOException {
 		List<String> formattedArgsList = new ArrayList<String>();
 		int argLength = argObjects.length;
 		
 		for(int i=0; i<argLength; i++){
 			String argTypeName = argTypeNames[i];
 			String argValueStr = "null";
-			if(argObjects[i] != null)
-				argValueStr = parseObject(argTypeName, argObjects[i]);
+			if(argObjects[i] != null) {
+                File f = new File("/data/data/com.mindmac.applog/output/" + System.currentTimeMillis());
+                FileWriter fw = new FileWriter(f.getAbsoluteFile());
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write(argObjects[i].toString());
+                bw.close();
+
+                argValueStr = parseObject(argTypeName, argObjects[i]);
+            }
 			if(isOutputJson)
 				formattedArgsList.add(String.format("{\"type\":\"%s\", \"content\":\"%s\"}", 
 						argTypeName, argValueStr));
